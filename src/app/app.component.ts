@@ -1,7 +1,10 @@
 import { Component } from '@angular/core';
+import { MoviesComponent } from './components/movies/movies.component';
 
 @Component({
+  moduleId: module.id,
   selector: 'my-app',
-  template: `<h1>Hello {{name}}</h1>`,
+  templateUrl: 'app.component.html',
+  directives: [MoviesComponent]
 })
-export class AppComponent  { name = 'Angular'; }
+export class AppComponent { }
